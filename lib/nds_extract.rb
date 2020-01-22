@@ -32,6 +32,7 @@ def list_of_directors(source)
     list << source[director_index][:name]
     director_index += 1 
   end
+  
   list
 end
 
