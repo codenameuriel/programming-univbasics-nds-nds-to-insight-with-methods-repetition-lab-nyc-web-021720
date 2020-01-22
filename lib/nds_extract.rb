@@ -44,6 +44,7 @@ def total_gross(source)
   list_of_directors(source).size.times do |i|
     total += directors_totals(source)[list_of_directors(source)[i]]
   end
+  
   total
 end
 
