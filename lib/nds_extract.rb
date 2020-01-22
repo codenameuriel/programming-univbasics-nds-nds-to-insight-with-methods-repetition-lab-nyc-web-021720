@@ -50,7 +50,8 @@ def total_gross(source)
   # return the total
   total = 0 
   list_of_directors(source).length.times do |i|
-    total += 
+    list_of_directors(source)[i] = director
+    total += directors_totals(source)[]
   end
 end
 
