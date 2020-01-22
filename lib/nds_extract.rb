@@ -51,7 +51,7 @@ def total_gross(source)
   total = 0 
   list_of_directors(source).length.times do |i|
     directors_totals(source).length.times do |i|
-      if list_of_directors(source)[i] == directors_totals(source)[i][:name]
+      if list_of_directors(source)[i] == directors_totals(source)[i][list_of_directors(source)[i]]
         total += directors_totals(source)[i][:]
       end
     end
